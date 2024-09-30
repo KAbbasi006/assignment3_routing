@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 
-function Home() {
+function Navbar() {
   const route = useRouter()
   return (
     <div
@@ -11,7 +11,7 @@ function Home() {
         justifyContent: 'flex-start',
         alignItems: 'center',
         minHeight: '100vh',
-        backgroundColor: 'black',
+        backgroundColor: 'grey',
         color: 'white',
       }}>
       <h1
@@ -19,13 +19,14 @@ function Home() {
           textAlign: 'center',
           fontSize: '300%',
           marginTop: '20px'
-        }}>This is Home Page</h1><br /><br />
-      <button onClick={() => route.push('./navbar')}>Go to Navbar</button><br />
+        }}>This is  Navbar</h1><br /><br />
+      <button onClick={() => route.push('./')}>Go to Home Page</button><br />
       <button onClick={() => route.push('./about')}>Go to About</button><br />
       <button onClick={() => route.push('./contact-us')}>Go to Contact us</button><br />
       <button onClick={() => route.push('./footer')}>Go to Footer</button>
+
     </div>
   );
 }
 
-export default Home
+export default Navbar
