@@ -1,6 +1,5 @@
 'use client'
 import { useRouter } from 'next/navigation'
-
 function Contact() {
   const route = useRouter()
   return (

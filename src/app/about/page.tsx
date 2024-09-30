@@ -1,6 +1,5 @@
 'use client'
 import { useRouter } from 'next/navigation'
-
 function About() {
   const route = useRouter()
   return (
@@ -28,5 +27,4 @@ function About() {
     </div>
   );
 }
-
 export default About

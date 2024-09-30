@@ -1,8 +1,7 @@
-'use client'
-import { useRouter } from 'next/navigation'
 
-function Home() {
-  const route = useRouter()
+
+import Link from "next/link";
+export default function Home() {
   return (
     <div
       style={{
@@ -20,12 +19,10 @@ function Home() {
           fontSize: '300%',
           marginTop: '20px'
         }}>This is Home Page</h1><br /><br />
-      <button onClick={() => route.push('./navbar')}>Go to Navbar</button><br />
-      <button onClick={() => route.push('./about')}>Go to About</button><br />
-      <button onClick={() => route.push('./contact-us')}>Go to Contact us</button><br />
-      <button onClick={() => route.push('./footer')}>Go to Footer</button>
+      <Link href='./navbar'>Go to Navbar</Link><br />
+      <Link href='./about'>Go to About</Link><br />
+      <Link href='./contact-us'>Go to Contact us</Link><br />
+      <Link href='./footer'>Go to Footer</Link>
     </div>
-  );
+  )
 }
-
-export default Home
